@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>A few simple form demos - enhanced form</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="formdemos.css">
+</head>
+<body>
+  
+  <h1>HTML5 form example</h1>
+
+  <form action="/cgi-bin/formmail.pl">
+    <p><label for="name">Contact Name *</label>
+       <input type="text" required id="name" name="name"></p>
+    <p><label for="bday">Birthday</label>
+       <input type="date" id="bday" name="bday" 
+       placeholder="DD/MM/YYYY"></p>
+    <p><label for="lcolour">Label Colour</label>
+       <input type="color" id="lcolour" name="lcolour"></p>
+    <p><label for="phone">Phone</label>
+       <input type="tel" id="phone" name="phone"></p>
+    <p><label for="age">Age</label>
+       <input type="number" id="age" name="age"></p>
+    <p class="sendoff">
+      <input type="submit" value="add to contacts">
+    </p>   
+  </form> 
+
+  <nav>
+    <ul>
+      <li><a href="plain.html">Plain form without HTML5 enhancements</a></li>
+      <li><strong>Form with HTML5 enhancements (required, tel…)</strong></li>
+      <li><a href="select.html">Select box</a></li>
+      <li><a href="datalist.html">Datalist example</a></li>
+      <li><a href="pe-datalist.html">Progressively enhanced datalist example</a></li>
+    </ul>
+  </nav>
+
+</body>
+</html>
